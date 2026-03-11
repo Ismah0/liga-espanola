@@ -2,24 +2,58 @@
 @section('titulo', 'Tabla de Posiciones')
 
 @section('contenido')
-<main class="contenido-central">
-    <section class="seccion-principal" style="flex: 1;">
-        <h2>Tabla de Posiciones</h2>
-        <table style="width: 100%; border-collapse: collapse; text-align: left;" border="1">
-            <thead>
-                <tr>
-                    <th style="padding: 10px;">Posición</th>
-                    <th style="padding: 10px;">Equipo</th>
-                    <th style="padding: 10px;">Puntos</th>
-                    <th style="padding: 10px;">Partidos Jugados</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td style="padding: 10px;">1</td><td>Equipo A</td><td>30</td><td>10</td></tr>
-                <tr><td style="padding: 10px;">2</td><td>Equipo B</td><td>28</td><td>10</td></tr>
-                <tr><td style="padding: 10px;">3</td><td>Equipo C</td><td>25</td><td>10</td></tr>
-            </tbody>
-        </table>
-    </section>
-</main>
+<div class="text-center mb-5">
+    <h2 class="h2 font-bold text-primary">Tabla de Posiciones</h2>
+    <p class="text-secondary">Clasificación actual de la temporada 2026.</p>
+</div>
+
+<section class="row justify-content-center">
+    <div class="col-lg-10">
+        <div class="card shadow-sm border-0">
+            <div class="card-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle mb-0 text-center">
+                        <thead class="bg-primary text-white">
+                            <tr>
+                                <th class="p-3">Posición</th>
+                                <th class="p-3 text-start">Equipo</th>
+                                <th class="p-3">Partidos Jugados</th>
+                                <th class="p-3">Puntos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-bold fs-5">1</td>
+                                <td class="text-start font-bold">
+                                    <img src="{{ asset('img/barca.png') }}" width="30" class="me-2" alt="Escudo">
+                                    FC Barcelona
+                                </td>
+                                <td>27</td>
+                                <td class="font-bold text-primary fs-5">67</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold fs-5">2</td>
+                                <td class="text-start font-bold">
+                                    <img src="{{ asset('img/realmadrid.png') }}" width="30" class="me-2" alt="Escudo">
+                                    Real Madrid
+                                </td>
+                                <td>27</td>
+                                <td class="font-bold text-primary fs-5">63</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold fs-5">3</td>
+                                <td class="text-start font-bold">
+                                    <img src="{{ asset('img/atlmadrid.png') }}" width="30" class="me-2" alt="Escudo">
+                                    Atlético Madrid
+                                </td>
+                                <td>27</td>
+                                <td class="font-bold text-primary fs-5">54</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 @endsection

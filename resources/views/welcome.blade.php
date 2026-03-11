@@ -1,87 +1,73 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Liga - Inicio</title>
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-</head>
-<body class="bg-light">
+@extends('layouts.app')
+@section('titulo', 'Inicio')
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
-        <div class="container">
-            <a class="navbar-brand" href="#">La Liga Web</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#equipos">Equipos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+@section('contenido')
+<div class="row">
+    <section class="col-md-8">
+        
+        <div class="card mb-4 bg-dark text-white border-0 shadow">
+            <img src="{{ asset('img/estadio-barca.jpg') }}" class="card-img" alt="Estadio" style="height: 350px; object-fit: cover; opacity: 0.5;">
+            <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center p-5">
+                <h2 class="h1 font-bold text-center display-4">¡Bienvenidos a La Liga!</h2>
+                <p class="text-center font-light fs-4 mt-3 w-75">Sigue a tus equipos y partidos favoritos.</p>
+            </div>
+        </div>
+
+        <h3 class="h3 mb-3 font-bold text-primary">Noticias Recientes</h3>
+        <p class="text-secondary mb-4">Mantente al tanto de las últimas novedades del fútbol español.</p>
+        
+        <div class="row g-4">
+            <article class="col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body p-4">
+                        <h4 class="h5 font-bold text-dark">Victoria del Real Madrid</h4>
+                        <p class="card-text text-secondary mt-2 small lh-lg">El equipo se llevó la victoria en un emocionante partido que mantuvo a todos al borde de sus asientos.</p>
+                        <button class="btn btn-primary btn-sm mt-3">Leer más</button>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body p-4">
+                        <h4 class="h5 font-bold text-dark">Nuevo Fichaje en Barcelona</h4>
+                        <p class="card-text text-secondary mt-2 small lh-lg">El equipo anunció un nuevo fichaje estrella para esta temporada que promete cambiar el esquema táctico.</p>
+                        <button class="btn btn-primary btn-sm mt-3">Leer más</button>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <aside class="col-md-4 mt-4 mt-md-0 ps-md-4">
+        <h3 class="h3 mb-3 font-bold text-dark">Tabla de Posiciones</h3>
+        <div class="card shadow border-0 overflow-hidden">
+            <div class="card-body p-0">
+                <ul class="list-group list-group-flush table-hover align-middle">
+                    <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                        <span class="font-bold d-flex align-items-center fs-6">
+                            <img src="{{ asset('img/barca.png') }}" width="25" class="me-3" alt="Logo"> 
+                            1. FC Barcelona
+                        </span>
+                        <span class="badge bg-primary rounded-pill fs-7 px-3 py-2">67 pts</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                        <span class="font-bold d-flex align-items-center fs-6">
+                            <img src="{{ asset('img/realmadrid.png') }}" width="25" class="me-3" alt="Logo"> 
+                            2. Real Madrid
+                        </span>
+                        <span class="badge bg-primary rounded-pill fs-7 px-3 py-2">63 pts</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                        <span class="font-bold d-flex align-items-center fs-6">
+                            <img src="{{ asset('img/atlmadrid.png') }}" width="25" class="me-3" alt="Logo"> 
+                            3. Atlético Madrid
+                        </span>
+                        <span class="badge bg-primary rounded-pill fs-7 px-3 py-2">54 pts</span>
+                    </li>
                 </ul>
             </div>
         </div>
-    </nav>
-
-    <div class="container">
-        <h1 class="text-center mb-5" id="equipos">Catálogo de Equipos</h1>
-
-        <div class="row g-4">
-            <div class="col-12 col-md-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body text-center">
-                        <h5 class="card-title text-primary">Barcelona</h5>
-                        <p class="card-text">Consulta la historia, estadio y plantilla actual del equipo blaugrana.</p>
-                        <a href="#" class="btn btn-primary">Ver Perfil</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body text-center">
-                        <h5 class="card-title text-primary">Real Madrid</h5>
-                        <p class="card-text">Consulta el palmarés y la información detallada del club merengue.</p>
-                        <a href="#" class="btn btn-primary">Ver Perfil</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body text-center">
-                        <h5 class="card-title text-primary">Atlético de Madrid</h5>
-                        <p class="card-text">Toda la actualidad, resultados e historia del equipo colchonero.</p>
-                        <a href="#" class="btn btn-primary">Ver Perfil</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <hr class="my-5">
-
-        <div class="row justify-content-center" id="contacto">
-            <div class="col-md-6">
-                <h3 class="text-center mb-3">Contacto</h3>
-                <div class="card shadow-sm p-4 mb-5">
-                    <form>
-                        <div class="mb-3">
-                            <label for="nombre" class="form-label">Nombre completo</label>
-                            <input type="text" class="form-control" id="nombre" placeholder="Ej. Juan Pérez">
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Correo electrónico</label>
-                            <input type="email" class="form-control" id="email" placeholder="correo@ejemplo.com">
-                        </div>
-                        <div class="mb-3">
-                            <label for="mensaje" class="form-label">Mensaje</label>
-                            <textarea class="form-control" id="mensaje" rows="3"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-dark w-100">Enviar Mensaje</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</body>
-</html>
+    </aside>
+</div>
+@endsection

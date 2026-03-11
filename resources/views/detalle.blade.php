@@ -2,36 +2,62 @@
 @section('titulo', 'Perfil del Equipo')
 
 @section('contenido')
-<main class="contenido-central" style="flex-direction: column;">
-    <section class="seccion-principal" style="text-align: center; background-color: #eee;">
-        <h2>Nombre del Equipo</h2>
-        <p>Historia y detalles importantes del equipo</p>
-    </section>
+<div class="text-center mb-5 bg-dark text-white p-5 rounded shadow">
+    <h2 class="h1 font-bold">FC Barcelona</h2>
+    <p class="font-light mt-2">Fundado en 1899, es uno de los clubes más exitosos y reconocidos del fútbol mundial.</p>
+</div>
 
-    <section class="seccion-principal">
-        <h3>Estadísticas del Equipo</h3>
-        <div class="cuadricula-elementos" style="grid-template-columns: repeat(2, 1fr);">
-            <article class="tarjeta-item">Partidos Jugados: 30</article>
-            <article class="tarjeta-item">Victorias: 20</article>
-        </div>
-    </section>
+<section class="mb-5">
+    <h3 class="h3 font-bold text-primary text-center mb-4">Escudo y Estadio</h3>
+    <div class="row g-4 justify-content-center">
+        <article class="col-md-5">
+            <div class="card border-0 shadow-sm h-100 text-center">
+                <img src="{{ asset('img/barca.png') }}" class="card-img-top p-4 mx-auto" style="height: 200px; width: auto; object-fit: contain;" alt="Escudo">
+                <div class="card-body bg-light">
+                    <h4 class="h5 font-bold">Escudo</h4>
+                    <p class="text-secondary mb-0">El emblema del equipo.</p>
+                </div>
+            </div>
+        </article>
+        <article class="col-md-5">
+            <div class="card border-0 shadow-sm h-100 text-center">
+                <img src="{{ asset('img/estadio-barca.jpg') }}" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Estadio">
+                <div class="card-body bg-light">
+                    <h4 class="h5 font-bold">Estadio</h4>
+                    <p class="text-secondary mb-0">El hogar del equipo.</p>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
 
-    <section class="seccion-principal">
-        <h3>Escudo y Estadio</h3>
-        <div class="cuadricula-elementos" style="grid-template-columns: repeat(2, 1fr);">
-            <article class="tarjeta-item">Escudo del equipo</article>
-            <article class="tarjeta-item">Estadio del equipo</article>
-        </div>
-    </section>
-
-    <section class="seccion-principal">
-        <h3>Jugadores Clave</h3>
-        <div class="cuadricula-elementos" style="grid-template-columns: repeat(4, 1fr);">
-            <article class="tarjeta-item">Jugador 1</article>
-            <article class="tarjeta-item">Jugador 2</article>
-            <article class="tarjeta-item">Jugador 3</article>
-            <article class="tarjeta-item">Jugador 4</article>
-        </div>
-    </section>
-</main>
+<section class="text-center">
+    <h3 class="h3 font-bold text-primary mb-4">Jugadores Clave</h3>
+    <div class="row g-4">
+        <article class="col-6 col-md-3">
+            <img src="{{ asset('img/LAMINE-YAMAL.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Lamine Yamal">
+            <h4 class="h6 font-bold mb-0">Lamine Yamal</h4>
+            <p class="text-secondary small mb-2">Delantero</p>
+            <p class="font-bold text-dark">Goles: 13</p>
+        </article>
+        <article class="col-6 col-md-3">
+            <img src="{{ asset('img/PEDRI-min.jpg') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Pedri">
+            <h4 class="h6 font-bold mb-0">Pedri</h4>
+            <p class="text-secondary small mb-2">Centrocampista</p>
+            <p class="font-bold text-dark">Asistencias: 6</p>
+        </article>
+        <article class="col-6 col-md-3">
+            <img src="{{ asset('img/ERIC GARCÍA-min.jpg') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Eric García">
+            <h4 class="h6 font-bold mb-0">Eric García</h4>
+            <p class="text-secondary small mb-2">Defensor</p>
+            <p class="font-bold text-dark">Intercepciones: 36</p>
+        </article>
+        <article class="col-6 col-md-3">
+            <img src="{{ asset('img/joan-garcia.jpg') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Joan García">
+            <h4 class="h6 font-bold mb-0">Joan García</h4>
+            <p class="text-secondary small mb-2">Portero</p>
+            <p class="font-bold text-dark">Paradas: 20</p>
+        </article>
+    </div>
+</section>
 @endsection

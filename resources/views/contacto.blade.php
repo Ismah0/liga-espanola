@@ -1,26 +1,43 @@
 @extends('layouts.app')
-@section('titulo', 'Contacto')
+@section('titulo', 'Contáctanos')
 
 @section('contenido')
-<main class="contenido-central">
-    <section class="seccion-principal" style="flex: 1;">
-        <h2 style="text-align: center;">Formulario de Contacto</h2>
+<section class="row justify-content-center mt-5">
+    <div class="col-md-8 col-lg-6">
         
-        <form style="display: flex; flex-direction: column; gap: 15px; max-width: 500px; margin: 0 auto; border: 1px solid #ccc; padding: 20px;">
-            <div>
-                <label>Nombre</label>
-                <input type="text" style="width: 100%; padding: 8px;" placeholder="Ingresa tu nombre">
+        <div class="card shadow border-0">
+            <div class="card-body p-5">
+                
+                <h2 class="h3 font-bold text-center mb-3 text-dark">Contáctanos</h2>
+                <p class="text-center text-secondary mb-4">Estamos aquí para ayudarte. Completa el formulario a continuación.</p>
+                
+                <form action="#" method="POST">
+                    
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label font-bold text-dark">Nombre</label>
+                        <input type="text" class="form-control p-2" id="nombre" placeholder="Ingresa tu nombre">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="correo" class="form-label font-bold text-dark">Correo Electrónico</label>
+                        <input type="email" class="form-control p-2" id="correo" placeholder="Ingresa tu correo electrónico">
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label for="mensaje" class="form-label font-bold text-dark">Mensaje</label>
+                        <textarea class="form-control p-2" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí"></textarea>
+                        <div class="form-text text-secondary small mt-1">Tu mensaje debe tener al menos 10 caracteres</div>
+                    </div>
+                    
+                    <div class="d-grid mt-4">
+                        <button type="submit" class="btn btn-dark btn-lg font-bold">Enviar</button>
+                    </div>
+                    
+                </form>
+
             </div>
-            <div>
-                <label>Correo Electrónico</label>
-                <input type="email" style="width: 100%; padding: 8px;" placeholder="Ingresa tu correo electrónico">
-            </div>
-            <div>
-                <label>Mensaje</label>
-                <textarea style="width: 100%; padding: 8px; height: 100px;" placeholder="Escribe tu mensaje aquí"></textarea>
-            </div>
-            <button type="button" style="padding: 10px; background: #666; color: white; border: none; cursor: pointer;">Enviar</button>
-        </form>
-    </section>
-</main>
+        </div>
+
+    </div>
+</section>
 @endsection
