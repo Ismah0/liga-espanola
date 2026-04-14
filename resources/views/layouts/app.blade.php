@@ -55,6 +55,8 @@
                     <a class="nav-link" href="/historia">Historia</a>
                     <a class="nav-link" href="/noticias">Noticias</a>
                     <a class="nav-link" href="/contacto">Contacto</a>
+                    <a class="nav-link font-bold text-warning" href="/faq">FAQ</a>
+                    <a class="nav-link font-bold text-warning" href="/catalogo">Catálogo / Tienda</a>
                 </div>
             </div>
         </nav>
