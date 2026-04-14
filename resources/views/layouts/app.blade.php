@@ -47,14 +47,15 @@
             <div class="container">
                 <div class="navbar-nav">
                     <a class="nav-link" href="/">Inicio</a>
-                    <a class="nav-link" href="/equipos">Equipos</a>
+                    <a class="nav-link" href="/equipos-test">Equipos</a>
                     <a class="nav-link" href="/posiciones">Posiciones</a>
                     <a class="nav-link" href="/calendario">Calendario</a>
                     <a class="nav-link" href="/resultados">Resultados</a>
                     <a class="nav-link" href="/goleadores">Goleadores</a>
                     <a class="nav-link" href="/historia">Historia</a>
                     <a class="nav-link" href="/noticias">Noticias</a>
-                    <a class="nav-link" href="/contacto">Contacto</a>
+                    <a class="nav-link" href="/con">Contacto</a>
+                    <a class="nav-link font-bold text-primary" href="/faq">FAQ (Preguntas)</a>
                 </div>
             </div>
         </nav>
@@ -64,9 +65,7 @@
         @yield('contenido')
     </main>
 
-    <footer class="bg-dark text-white text-center p-3 mt-auto">
-        <div class="container d-flex justify-content-between align-items-center">
-            <p class="mb-0 font-light">&copy; 2026 La Liga Española</p>
+    <f*lass="mb-0 font-light">&copy; 2026 La Liga Española</p>
             <div>
                 <a href="#" class="text-white me-3">Política de privacidad</a>
                 <a href="#" class="text-white">Términos y condiciones</a>

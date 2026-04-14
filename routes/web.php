@@ -11,3 +11,4 @@ Route::get('/goleadores', function () { return view('goleadores'); });
 Route::get('/historia', function () { return view('historia'); });
 Route::get('/noticias', function () { return view('noticias'); });
 Route::get('/contacto', function () { return view('contacto'); });
+Route::get('/faq', function () { return view('faq'); });
