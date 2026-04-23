@@ -2,7 +2,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () { return view('inicio'); });
-Route::get('/equipos', function () { return view('equipos'); });
+Route::get('/equipos-test', function () { return view('equipos'); });
 Route::get('/detalle', function () { return view('detalle'); });
 Route::get('/posiciones', function () { return view('posiciones'); });
 Route::get('/calendario', function () { return view('calendario'); });
