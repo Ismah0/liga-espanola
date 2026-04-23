@@ -1,115 +1,103 @@
-document.addEventListener('DOMContentLoaded', function() {
+// 1. Enlaces a los elementos principales
+const chkTodos = document.getElementById('chk-todos');
+const inputBuscador = document.getElementById('buscador-nombre');
 
-    // 1. Enlace a componentes mediante ById (Checkbox Todos)
-    let chkTodos = document.getElementById('chk-todos');
+// Lista de todos los IDs de tus checkboxes
+const IDs = [
+    'chk-madrid', 'chk-barcelona', 'chk-atletico',
+    'chk-camisetas', 'chk-sudaderas', 'chk-gorras',
+    'chk-chica', 'chk-mediana', 'chk-grande'
+];
 
-    // Checkboxes Categoría 1: Equipos
-    let chkMadrid = document.getElementById('chk-madrid');
-    let chkBarcelona = document.getElementById('chk-barcelona');
-    let chkAtletico = document.getElementById('chk-atletico');
+// 2. Asignar eventos cuando la página cargue
+document.addEventListener('DOMContentLoaded', () => {
+    // Evento para cada checkbox (cuando lo marcas/desmarcas)
+    IDs.forEach(id => {
+        const elemento = document.getElementById(id);
+        if (elemento) elemento.addEventListener('change', ejecutarFiltros);
+    });
 
-    // Checkboxes Categoría 2: Productos
-    let chkCamisetas = document.getElementById('chk-camisetas');
-    let chkSudaderas = document.getElementById('chk-sudaderas');
-    let chkGorras = document.getElementById('chk-gorras');
-
-    // Checkboxes Categoría 3: Tallas
-    let chkChica = document.getElementById('chk-chica');
-    let chkMediana = document.getElementById('chk-mediana');
-    let chkGrande = document.getElementById('chk-grande');
-
-    // 2. Función explícita principal
-    function aplicarFiltros() {
-        // Enlace a divisiones mediante ClassName
-        let articulos = document.getElementsByClassName('articulo');
-
-        // Revisamos qué categorías tienen al menos un check seleccionado
-        let hayFiltroEquipo = chkMadrid.checked || chkBarcelona.checked || chkAtletico.checked;
-        let hayFiltroProducto = chkCamisetas.checked || chkSudaderas.checked || chkGorras.checked;
-        let hayFiltroTalla = chkChica.checked || chkMediana.checked || chkGrande.checked;
-
-        // Regla: Si se selecciona "Todos" o no hay NADA seleccionado, mostramos todo
-        let mostrarTodos = chkTodos.checked || (!hayFiltroEquipo && !hayFiltroProducto && !hayFiltroTalla);
-
-        // Ciclo for básico para recorrer productos
-        for (let i = 0; i < articulos.length; i++) {
-            let item = articulos[i];
-
-            // Rúbrica: "Una forma es, ocultar todos los productos y después ir mostrando..."
-            item.classList.add('oculto'); 
-
-            if (mostrarTodos) {
-                item.classList.remove('oculto');
-            } else {
-                // Validación Categoría 1 (Inclusión OR)
-                let pasaEquipo = false;
-                if (!hayFiltroEquipo) {
-                    pasaEquipo = true; // Si no hay equipos filtrados, pasa la prueba
-                } else {
-                    if (chkMadrid.checked && item.classList.contains('madrid')) pasaEquipo = true;
-                    if (chkBarcelona.checked && item.classList.contains('barcelona')) pasaEquipo = true;
-                    if (chkAtletico.checked && item.classList.contains('atletico')) pasaEquipo = true;
-                }
-
-                // Validación Categoría 2 (Inclusión OR)
-                let pasaProducto = false;
-                if (!hayFiltroProducto) {
-                    pasaProducto = true;
-                } else {
-                    if (chkCamisetas.checked && item.classList.contains('camisetas')) pasaProducto = true;
-                    if (chkSudaderas.checked && item.classList.contains('sudaderas')) pasaProducto = true;
-                    if (chkGorras.checked && item.classList.contains('gorras')) pasaProducto = true;
-                }
-
-                // Validación Categoría 3 (Inclusión OR)
-                let pasaTalla = false;
-                if (!hayFiltroTalla) {
-                    pasaTalla = true;
-                } else {
-                    if (chkChica.checked && item.classList.contains('chica')) pasaTalla = true;
-                    if (chkMediana.checked && item.classList.contains('mediana')) pasaTalla = true;
-                    if (chkGrande.checked && item.classList.contains('grande')) pasaTalla = true;
-                }
-
-                // Rúbrica: Exclusión AND entre diferentes categorías
-                // El producto DEBE pasar las 3 pruebas para mostrarse
-                if (pasaEquipo && pasaProducto && pasaTalla) {
-                    item.classList.remove('oculto');
-                }
-            }
-        }
+    // Evento para el buscador (cuando escribes)
+    if (inputBuscador) {
+        inputBuscador.addEventListener('input', ejecutarFiltros);
     }
 
-    // Funciones explícitas para manejar la interacción de los clicks
-    function clickEnTodos() {
-        if (chkTodos.checked) {
-            // Si marco "Todos", desmarco los demás
-            chkMadrid.checked = false; chkBarcelona.checked = false; chkAtletico.checked = false;
-            chkCamisetas.checked = false; chkSudaderas.checked = false; chkGorras.checked = false;
-            chkChica.checked = false; chkMediana.checked = false; chkGrande.checked = false;
-        }
-        aplicarFiltros();
+    // Evento para el checkbox "Ver Todos"
+    if (chkTodos) {
+        chkTodos.addEventListener('change', gestionarVerTodos);
     }
-
-    function clickEnFiltro() {
-        // Si hago clic en cualquier filtro, desmarco el de "Todos"
-        chkTodos.checked = false;
-        aplicarFiltros();
-    }
-
-    // 3. Agregar eventos mediante addEventListener
-    chkTodos.addEventListener('change', clickEnTodos);
-    
-    chkMadrid.addEventListener('change', clickEnFiltro);
-    chkBarcelona.addEventListener('change', clickEnFiltro);
-    chkAtletico.addEventListener('change', clickEnFiltro);
-    
-    chkCamisetas.addEventListener('change', clickEnFiltro);
-    chkSudaderas.addEventListener('change', clickEnFiltro);
-    chkGorras.addEventListener('change', clickEnFiltro);
-    
-    chkChica.addEventListener('change', clickEnFiltro);
-    chkMediana.addEventListener('change', clickEnFiltro);
-    chkGrande.addEventListener('change', clickEnFiltro);
-
 });
+
+// Función para el botón "Ver Todos"
+function gestionarVerTodos() {
+    if (chkTodos.checked) {
+        // 1. Desmarcar todos los demás checks
+        IDs.forEach(id => { 
+            const check = document.getElementById(id);
+            if(check) check.checked = false; 
+        });
+        
+        // 2. Limpiar el buscador
+        if(inputBuscador) inputBuscador.value = ""; 
+        
+        // 3. Mostrar todos los artículos
+        const articulos = document.getElementsByClassName('articulo');
+        for (let i = 0; i < articulos.length; i++) {
+            articulos[i].style.display = 'block';
+        }
+    }
+}
+
+// Función principal que filtra los productos
+function ejecutarFiltros() {
+    // Si marcamos un filtro o escribimos, quitamos la palomita de "Ver Todos"
+    if (this.id !== 'chk-todos') chkTodos.checked = false;
+    
+    // Obtenemos los artículos mediante ClassName (Requisito de tu profesor)
+    const articulos = document.getElementsByClassName('articulo');
+    
+    // Texto que el usuario escribió (en minúsculas)
+    const textoBusqueda = inputBuscador ? inputBuscador.value.toLowerCase() : "";
+
+    // Obtenemos qué filtros están marcados
+    const equipos = obtenerSeleccionados(['chk-madrid', 'chk-barcelona', 'chk-atletico']);
+    const tipos = obtenerSeleccionados(['chk-camisetas', 'chk-sudaderas', 'chk-gorras']);
+    const tallas = obtenerSeleccionados(['chk-chica', 'chk-mediana', 'chk-grande']);
+
+    // Recorremos todos los artículos para ver cuáles mostrar y cuáles ocultar
+    for (let i = 0; i < articulos.length; i++) {
+        const item = articulos[i];
+        
+        // Lógica 1: ¿Cumple con los checkboxes?
+        const cumpleEquipo = equipos.length === 0 || equipos.some(c => item.classList.contains(c));
+        const cumpleTipo = tipos.length === 0 || tipos.some(c => item.classList.contains(c));
+        const cumpleTalla = tallas.length === 0 || tallas.some(c => item.classList.contains(c));
+
+        // Lógica 2: ¿Cumple con el nombre buscado? (Requisito de tu profesor)
+        let coincideNombre = false;
+        const clases = Array.from(item.classList); // Leemos las clases del div
+        clases.forEach(clase => {
+            // Buscamos la clase que empieza con 'nombre-' y vemos si incluye lo escrito
+            if (clase.startsWith('nombre-') && clase.includes(textoBusqueda)) {
+                coincideNombre = true;
+            }
+        });
+
+        // Decisión final: Mostrar (block) u Ocultar (none)
+        if (cumpleEquipo && cumpleTipo && cumpleTalla && coincideNombre) {
+            item.style.display = 'block';
+        } else {
+            item.style.display = 'none';
+        }
+    }
+}
+
+// Función auxiliar para saber qué checkboxes están marcados
+function obtenerSeleccionados(grupoIds) {
+    return grupoIds
+        .filter(id => {
+            const el = document.getElementById(id);
+            return el && el.checked;
+        })
+        .map(id => id.replace('chk-', '')); // Le quitamos el 'chk-' para que coincida con la clase
+}
