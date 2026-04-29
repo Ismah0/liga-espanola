@@ -65,6 +65,7 @@
     <main class="container mt-4 mb-5">
         @yield('contenido')
     </main>
+    
 
     <f*lass="mb-0 font-light">&copy; 2026 La Liga Española</p>
             <div>
@@ -73,6 +74,6 @@
             </div>
         </div>
     </footer>
-
+    <script src="{{ asset('js/efectos-globales.js') }}"></script>
 </body>
 </html>

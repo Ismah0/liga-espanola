@@ -13,7 +13,7 @@
         <h3 class="h4 font-bold text-dark mb-4 border-bottom pb-2">Partidos Programados</h3>
         
         <article class="card shadow-sm border-0 mb-3">
-            <div class="card-body d-flex justify-content-between align-items-center p-4">
+            <div class="card-body efecto-hover d-flex justify-content-between align-items-center p-4">
                 <div class="d-flex align-items-center">
                     <div class="bg-light rounded p-3 me-4 text-center">
                         <span class="d-block font-bold text-primary fs-5">14</span>
@@ -33,7 +33,7 @@
         </article>
 
         <article class="card shadow-sm border-0 mb-3">
-            <div class="card-body d-flex justify-content-between align-items-center p-4">
+            <div class="card-body efecto-hover d-flex justify-content-between align-items-center p-4">
                 <div class="d-flex align-items-center">
                     <div class="bg-light rounded p-3 me-4 text-center">
                         <span class="d-block font-bold text-primary fs-5">15</span>
@@ -53,7 +53,7 @@
         </article>
 
         <article class="card shadow-sm border-0 mb-3">
-            <div class="card-body d-flex justify-content-between align-items-center p-4">
+            <div class="card-body efecto-hover d-flex justify-content-between align-items-center p-4">
                 <div class="d-flex align-items-center">
                     <div class="bg-light rounded p-3 me-4 text-center">
                         <span class="d-block font-bold text-primary fs-5">22</span>

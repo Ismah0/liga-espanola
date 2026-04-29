@@ -30,7 +30,7 @@
                     </div>
                     
                     <div class="d-grid mt-4">
-                        <button type="submit" class="btn btn-dark btn-lg font-bold">Enviar</button>
+                        <button type="submit" class="btn btn-dark btn-lg font-bold efecto-hover">Enviar</button>
                     </div>
                     
                 </form>

@@ -17,7 +17,7 @@
 
 <section class="row g-4 justify-content-center mb-5">
     <article class="col-md-5">
-        <div class="card h-100 shadow-sm border-0 overflow-hidden">
+        <div class="card h-100 efecto-hover shadow-sm border-0 overflow-hidden">
             <img src="{{ asset('img/trofeo.jpg') }}" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Orígenes">
             <div class="card-body p-4">
                 <h4 class="h4 font-bold text-dark mb-3">Orígenes del Torneo</h4>
@@ -27,7 +27,7 @@
     </article>
 
     <article class="col-md-5">
-        <div class="card h-100 shadow-sm border-0 overflow-hidden">
+        <div class="card h-100 efecto-hover shadow-sm border-0 overflow-hidden">
             <img src="{{ asset('img/escudos-antiguos.jpg') }}" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Campeones">
             <div class="card-body p-4">
                 <h4 class="h4 font-bold text-dark mb-3">Campeones Históricos</h4>

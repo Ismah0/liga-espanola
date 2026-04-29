@@ -11,7 +11,7 @@
     <div class="col-md-8">
         
         <article class="card border-0 shadow-sm mb-3">
-            <div class="card-body d-flex justify-content-between align-items-center p-4">
+            <div class="card-body efecto-hover d-flex justify-content-between align-items-center p-4">
                 <div class="d-flex align-items-center w-50">
                 <img src="{{ asset('img/madrid-vs-barcelona.jpg') }}" class="rounded me-3 shadow-sm" style="width: 60px; height: 40px; object-fit: cover;" alt="Partido">
                 <h4 class="h5 font-bold mb-0">Real Madrid vs FC Barcelona</h4>
@@ -21,7 +21,7 @@
         </article>
 
         <article class="card border-0 shadow-sm mb-3">
-            <div class="card-body d-flex justify-content-between align-items-center p-4">
+            <div class="card-body efecto-hover d-flex justify-content-between align-items-center p-4">
                 <div class="d-flex align-items-center w-50">
                 <img src="{{ asset('img/Valencia-CF-vs-Atlético-de-Madrid.jpg') }}" class="rounded me-3 shadow-sm" style="width: 60px; height: 40px; object-fit: cover;" alt="Partido">
                 <h4 class="h5 font-bold mb-0">Valencia CF vs Atlético de Madrid</h4>
@@ -31,7 +31,7 @@
         </article>
 
         <article class="card border-0 shadow-sm mb-3">
-            <div class="card-body d-flex justify-content-between align-items-center p-4">
+            <div class="card-body efecto-hover d-flex justify-content-between align-items-center p-4">
                 <div class="d-flex align-items-center w-50">
                 <img src="{{ asset('img/Sevilla-FC-vs-Real-Betis.jpg') }}" class="rounded me-3 shadow-sm" style="width: 60px; height: 40px; object-fit: cover;" alt="Partido">
                 <h4 class="h5 font-bold mb-0">Sevilla FC vs Real Betis</h4>
@@ -41,7 +41,7 @@
         </article>
 
         <article class="card border-0 shadow-sm mb-3">
-            <div class="card-body d-flex justify-content-between align-items-center p-4">
+            <div class="card-body efecto-hover d-flex justify-content-between align-items-center p-4">
                 <div class="d-flex align-items-center w-50">
                 <img src="{{ asset('img/Villarreal-CF-vs-Celta-de-Vigo.jpg') }}" class="rounded me-3 shadow-sm" style="width: 60px; height: 40px; object-fit: cover;" alt="Partido">
                 <h4 class="h5 font-bold mb-0">Villarreal CF vs Celta de Vigo</h4>

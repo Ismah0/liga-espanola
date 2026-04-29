@@ -18,7 +18,7 @@
         
         <div class="row g-4">
             <article class="col-md-6">
-                <div class="card h-100 shadow-sm border-0">
+                <div class="card h-100 efecto-hover shadow-sm border-0">
                     <div class="card-body p-4">
                         <h4 class="h5 font-bold text-dark">Victoria del Real Madrid</h4>
                         <p class="card-text text-secondary mt-2 small lh-lg">El equipo se llevó la victoria en un emocionante partido que mantuvo a todos al borde de sus asientos.</p>
@@ -28,7 +28,7 @@
             </article>
             
             <article class="col-md-6">
-                <div class="card h-100 shadow-sm border-0">
+                <div class="card h-100 efecto-hover shadow-sm border-0">
                     <div class="card-body p-4">
                         <h4 class="h5 font-bold text-dark">Nuevo Fichaje en Barcelona</h4>
                         <p class="card-text text-secondary mt-2 small lh-lg">El equipo anunció un nuevo fichaje estrella para esta temporada que promete cambiar el esquema táctico.</p>
@@ -41,7 +41,7 @@
 
     <aside class="col-md-4 mt-4 mt-md-0 ps-md-4">
         <h3 class="h3 mb-3 font-bold text-dark">Tabla de Posiciones</h3>
-        <div class="card shadow border-0 overflow-hidden">
+        <div class="card shadow border-0 overflow-hidden efecto-hover" onclick="window.location.href='/posiciones';" style="cursor: pointer;">
             <div class="card-body p-0">
                 <ul class="list-group list-group-flush table-hover align-middle">
                     <li class="list-group-item d-flex justify-content-between align-items-center p-3">

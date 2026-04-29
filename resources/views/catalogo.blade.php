@@ -47,7 +47,7 @@
             <div class="row g-4" id="contenedor-articulos">
                 
                 <div class="col-md-4 articulo madrid camisetas chica nombre-camiseta-madrid">
-                        <div class="card h-100 shadow-sm border-0 text-center">
+                        <div class="card efecto-hover h-100 shadow-sm border-0 text-center">
                             <img src="{{ asset('img-cat/playera-madrid.jpg') }}" class="card-img-top p-3" style="height:150px; object-fit:contain;">
                                 <div class="card-body">
                                     <h6 class="font-bold">Camiseta Madrid</h6>
@@ -57,7 +57,7 @@
                     </div>
 
                 <div class="col-md-4 articulo barcelona camisetas mediana nombre-camiseta-barcelona">
-                    <div class="card h-100 shadow-sm border-0 text-center">
+                    <div class="card efecto-hover h-100 shadow-sm border-0 text-center">
                         <img src="{{ asset('img-cat/playera-barca.jpg') }}" class="card-img-top p-3" style="height:150px; object-fit:contain;">
                             <div class="card-body">
                              <h6 class="font-bold">Camiseta barcelona</h6>
@@ -67,7 +67,7 @@
                 </div>
 
                 <div class="col-md-4 articulo atletico camisetas mediana nombre-camiseta-atletico">
-                    <div class="card h-100 shadow-sm border-0 text-center">
+                    <div class="card efecto-hover h-100 shadow-sm border-0 text-center">
                         <img src="{{ asset('img-cat/playera-atletico.jpg') }}" class="card-img-top p-3" style="height:150px; object-fit:contain;">
                             <div class="card-body">
                             <h6 class="font-bold">Camiseta atletico</h6>
@@ -77,49 +77,49 @@
             </div>
 
                 <div class="col-md-4 articulo madrid camisetas mediana nombre-camiseta-madrid">
-                    <div class="card h-100 shadow-sm border-0 text-center">
+                    <div class="card efecto-hover h-100 shadow-sm border-0 text-center">
                         <img src="{{ asset('img-cat/camiseta-madrid-m.jpg') }}" class="card-img-top p-3" style="height:150px; object-fit:contain;">
                         <div class="card-body"><h6 class="font-bold">Camiseta Madrid</h6><p class="small text-muted">Talla: Mediana</p></div>
                     </div>
                 </div>
 
             <div class="col-md-4 articulo atletico sudaderas grande nombre-sudadera-atletico">
-                <div class="card h-100 shadow-sm border-0 text-center">
+                <div class="card efecto-hover h-100 shadow-sm border-0 text-center">
                     <img src="{{ asset('img-cat/sudadera-atletico.jpg') }}" class="card-img-top p-3" style="height:150px; object-fit:contain;">
                 <div class="card-body"><h6 class="font-bold">Sudadera Atlético</h6><p class="small text-muted">Talla: Grande</p></div>
             </div>
         </div>
 
             <div class="col-md-4 articulo atletico gorras mediana nombre-gorra-atletico">
-                <div class="card h-100 shadow-sm border-0 text-center">
+                <div class="card efecto-hover h-100 shadow-sm border-0 text-center">
                     <img src="{{ asset('img-cat/gorra-atletico.jpg') }}" class="card-img-top p-3" style="height:150px; object-fit:contain;">
                 <div class="card-body"><h6 class="font-bold">Gorra atletico</h6><p class="small text-muted">Talla: Mediana</p></div>
             </div>
         </div>
 
             <div class="col-md-4 articulo madrid gorras mediana nombre-gorra-madrid">
-                <div class="card h-100 shadow-sm border-0 text-center">
+                <div class="card efecto-hover h-100 shadow-sm border-0 text-center">
                     <img src="{{ asset('img-cat/gorra-madrid.jfif') }}" class="card-img-top p-3" style="height:150px; object-fit:contain;">
                 <div class="card-body"><h6 class="font-bold">Gorra Madrid</h6><p class="small text-muted">Talla: Mediana</p></div>
             </div>
         </div>
 
             <div class="col-md-4 articulo barcelona gorras mediana nombre-gorra-barcelona">
-                <div class="card h-100 shadow-sm border-0 text-center">
+                <div class="card efecto-hover h-100 shadow-sm border-0 text-center">
                     <img src="{{ asset('img-cat/gorra-barca.png') }}" class="card-img-top p-3" style="height:150px; object-fit:contain;">
                 <div class="card-body"><h6 class="font-bold">Gorra Barcelona</h6><p class="small text-muted">Talla: Mediana</p></div>
             </div>
         </div>
 
             <div class="col-md-4 articulo barcelona sudaderas chica nombre-sudadera-barcelona">
-                <div class="card h-100 shadow-sm border-0 text-center">
+                <div class="card efecto-hover h-100 shadow-sm border-0 text-center">
                     <img src="{{ asset('img-cat/sudadera-barca.png') }}" class="card-img-top p-3" style="height:150px; object-fit:contain;">
                 <div class="card-body"><h6 class="font-bold">Sudadera Barcelona</h6><p class="small text-muted">Talla: Chica</p></div>
             </div>
         </div>
 
             <div class="col-md-4 articulo madrid sudaderas grande nombre-sudadera-madrid">
-                <div class="card h-100 shadow-sm border-0 text-center">
+                <div class="card efecto-hover h-100 shadow-sm border-0 text-center">
                     <img src="{{ asset('img-cat/sudadera-madrid.jpg') }}" class="card-img-top p-3" style="height:150px; object-fit:contain;">
                 <div class="card-body"><h6 class="font-bold">Sudadera Madrid</h6><p class="small text-muted">Talla: Grande</p></div>
             </div>

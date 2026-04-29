@@ -12,7 +12,7 @@
     <div class="col-lg-10">
         <h3 class="h4 font-bold text-dark mb-4 text-center border-bottom pb-2">Tabla de Goleadores</h3>
         
-        <div class="card shadow-sm border-0">
+        <div class="card  shadow-sm border-0">
             <div class="card-body p-0">
                 <div class="table-responsive">
                     <table class="table table-hover align-middle mb-0 text-center">

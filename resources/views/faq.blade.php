@@ -14,7 +14,7 @@
 
     <div class="space-y-4">
         
-        <div class="border border-gray-200 rounded-md">
+        <div class="border border-gray-200 rounded-md efecto-hover">
             <button id="p1" class="w-full text-left px-4 py-3 bg-gray-50 hover:bg-gray-100 font-semibold text-gray-800 focus:outline-none flex justify-between items-center transition-colors">
                 <span>¿Cuándo inicia la próxima temporada de La Liga?</span>
                 <span class="text-gray-500">▼</span>
@@ -24,7 +24,7 @@
             </div>
         </div>
 
-        <div class="border border-gray-200 rounded-md">
+        <div class="border border-gray-200 rounded-md efecto-hover">
             <button id="p2" class="w-full text-left px-4 py-3 bg-gray-50 hover:bg-gray-100 font-semibold text-gray-800 focus:outline-none flex justify-between items-center transition-colors">
                 <span>¿Cómo puedo comprar boletos para un partido?</span>
                 <span class="text-gray-500">▼</span>
@@ -34,7 +34,7 @@
             </div>
         </div>
 
-        <div class="border border-gray-200 rounded-md">
+        <div class="border border-gray-200 rounded-md efecto-hover">
             <button id="p3" class="w-full text-left px-4 py-3 bg-gray-50 hover:bg-gray-100 font-semibold text-gray-800 focus:outline-none flex justify-between items-center transition-colors">
                 <span>¿Qué equipos ascendieron este año?</span>
                 <span class="text-gray-500">▼</span>

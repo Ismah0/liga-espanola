@@ -9,7 +9,7 @@
 
 <section class="row g-4">
     <article class="col-md-6 col-lg-4">
-        <div class="card h-100 shadow-sm border-0">
+        <div class="card h-100 efecto-hover shadow-sm border-0">
             <img src="{{ asset('img/¡Épico-Clásico-en-el-Bernabéu!.jpg') }}" class="card-img-top" alt="Noticia">
             <div class="card-body p-4">
                 <span class="badge bg-primary mb-2">Destacado</span>
@@ -20,7 +20,7 @@
     </article>
 
     <article class="col-md-6 col-lg-4">
-        <div class="card h-100 shadow-sm border-0">
+        <div class="card h-100 efecto-hover shadow-sm border-0">
             <img src="{{ asset('img/Mbappé-He-venido-a-hacer-historia.jpg') }}" class="card-img-top" alt="Noticia">
             <div class="card-body p-4">
                 <span class="badge bg-dark mb-2">Entrevista</span>
@@ -31,7 +31,7 @@
     </article>
 
     <article class="col-md-6 col-lg-4">
-        <div class="card h-100 shadow-sm border-0">
+        <div class="card h-100 efecto-hover shadow-sm border-0">
             <img src="{{ asset('img/Lamine-Yamal-rompe-otro-récord.jpeg') }}" class="card-img-top" alt="Noticia">
             <div class="card-body p-4">
                 <span class="badge bg-secondary mb-2">Talentos</span>
@@ -42,7 +42,7 @@
     </article>
 
     <article class="col-md-6 col-lg-4">
-        <div class="card h-100 shadow-sm border-0">
+        <div class="card h-100 efecto-hover shadow-sm border-0">
             <img src="{{ asset('img/El-muro-del-Atlético-de-Madrid.jpg') }}" class="card-img-top" alt="Noticia">
             <div class="card-body p-4">
                 <span class="badge bg-primary mb-2">Análisis</span>
@@ -53,7 +53,7 @@
     </article>
 
     <article class="col-md-6 col-lg-4">
-        <div class="card h-100 shadow-sm border-0">
+        <div class="card h-100 efecto-hover shadow-sm border-0">
             <img src="{{ asset('img/Top-5-Goles-de-la-Jornada.jpg') }}" class="card-img-top" alt="Noticia">
             <div class="card-body p-4">
                 <span class="badge bg-dark mb-2">Resumen</span>
@@ -64,7 +64,7 @@
     </article>
 
     <article class="col-md-6 col-lg-4">
-        <div class="card h-100 shadow-sm border-0">
+        <div class="card h-100 efecto-hover shadow-sm border-0">
             <img src="{{ asset('img/Alarma-en-el-Valencia-por-lesión.jpg') }}" class="card-img-top" alt="Noticia">
             <div class="card-body p-4">
                 <span class="badge bg-danger mb-2">Salud</span>
