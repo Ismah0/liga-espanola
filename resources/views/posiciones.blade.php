@@ -3,7 +3,7 @@
 
 @section('contenido')
 <div class="text-center mb-5">
-    <h2 class="h2 font-bold text-primary">Tabla de Posiciones</h2>
+    <h2 class="efecto-deslizar h2 font-bold text-primary">Tabla de Posiciones</h2>
     <p class="text-secondary">Clasificación actual de la temporada 2026.</p>
 </div>
 

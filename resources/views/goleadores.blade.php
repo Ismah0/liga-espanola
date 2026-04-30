@@ -3,7 +3,7 @@
 
 @section('contenido')
 <div class="text-center mb-5">
-    <h2 class="h2 font-bold text-primary">Estadísticas de Máximos Goleadores</h2>
+    <h2 class="efecto-deslizar h2 font-bold text-primary">Estadísticas de Máximos Goleadores</h2>
     <p class="text-secondary">Consulta las estadísticas más recientes de los jugadores con mayor número de goles.</p>
     <button class="btn btn-dark mt-2 font-bold">Ver más</button>
 </div>

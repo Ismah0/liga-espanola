@@ -3,7 +3,7 @@
 
 @section('contenido')
 <div class="text-center mb-5">
-    <h2 class="h2 font-bold text-primary">Calendario de Partidos</h2>
+    <h2 class="efecto-deslizar h2 font-bold text-primary">Calendario de Partidos</h2>
     <p class="text-secondary">Consulta los partidos programados de la temporada.</p>
     <button class="btn btn-dark mt-2 font-bold">Ver Próximos Partidos</button>
 </div>

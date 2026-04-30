@@ -3,7 +3,7 @@
 
 @section('contenido')
 <div class="text-center mb-5">
-    <h2 class="h2 font-bold text-primary">Últimas Noticias</h2>
+    <h2 class="efecto-deslizar h2 font-bold text-primary">Últimas Noticias</h2>
     <p class="text-secondary">Mantente al día con las últimas noticias deportivas.</p>
 </div>
 

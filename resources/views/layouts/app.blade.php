@@ -75,5 +75,7 @@
         </div>
     </footer>
     <script src="{{ asset('js/efectos-globales.js') }}"></script>
+
+    <script src="{{ asset('js/animaciones.js') }}"></script>
 </body>
 </html>

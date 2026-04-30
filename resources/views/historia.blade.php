@@ -5,7 +5,7 @@
 <section class="card bg-dark text-white border-0 shadow mb-5 overflow-hidden">
     <img src="{{ asset('img/balon.jpg') }}" class="card-img" alt="Balón antiguo" style="height: 380px; object-fit: cover; opacity: 0.5;">
     <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center text-center p-5">
-        <h2 class="h1 font-bold display-4">Legado de La Liga</h2>
+        <h2 class="efecto-deslizar h1 font-bold display-4">Legado de La Liga</h2>
         <p class="fs-4 font-light mt-3 w-75">Casi un siglo de pasión, leyendas y el mejor fútbol del mundo. Explora nuestras raíces.</p>
     </div>
 </section>

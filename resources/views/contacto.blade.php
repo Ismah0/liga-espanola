@@ -8,7 +8,7 @@
         <div class="card shadow border-0">
             <div class="card-body p-5">
                 
-                <h2 class="h3 font-bold text-center mb-3 text-dark">Contáctanos</h2>
+                <h2 class="efecto-deslizar h3 font-bold text-center mb-3 text-dark">Contáctanos</h2>
                 <p class="text-center text-secondary mb-4">Estamos aquí para ayudarte. Completa el formulario a continuación.</p>
                 
                 <form action="#" method="POST">

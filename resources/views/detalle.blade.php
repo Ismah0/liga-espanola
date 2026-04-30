@@ -3,7 +3,7 @@
 
 @section('contenido')
 <div class="text-center mb-5 bg-dark text-white p-5 rounded shadow">
-    <h2 class="h1 font-bold">FC Barcelona</h2>
+    <h2 class="efecto-deslizar h1 font-bold">FC Barcelona</h2>
     <p class="font-light mt-2">Fundado en 1899, es uno de los clubes más exitosos y reconocidos del fútbol mundial.</p>
 </div>
 

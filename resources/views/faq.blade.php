@@ -10,7 +10,7 @@
 </style>
 
 <div class="max-w-3xl mx-auto my-10 p-6 bg-white rounded-lg shadow-md">
-    <h2 class="text-3xl font-bold text-center text-blue-900 mb-8">Preguntas Frecuentes (FAQ)</h2>
+    <h2 class="efecto-deslizar text-3xl font-bold text-center text-blue-900 mb-8">Preguntas Frecuentes (FAQ)</h2>
 
     <div class="space-y-4">
         
