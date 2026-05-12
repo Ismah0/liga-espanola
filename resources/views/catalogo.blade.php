@@ -2,14 +2,74 @@
 @section('titulo', 'Catálogo Oficial')
 
 @section('contenido')
+
+<style>
+    /* Efecto 3D para el título (Igual que posiciones) */
+    .efecto-3d {
+        text-transform: uppercase;
+        font-weight: 900;
+        letter-spacing: 4px;
+        color: #ffffff;
+        text-shadow: 
+            2px 2px 0px #0b5ed7, 
+            4px 4px 0px rgba(0, 0, 0, 0.4);
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+
+    /* Fondo azul que combina con tu navbar */
+    .caja-titulo-azul {
+        background: linear-gradient(135deg, #152b45 0%, #0d47a1 100%);
+        color: white;
+    }
+
+    /* Ajustes visuales para la tabla */
+    .tabla-goleadores th {
+        color: #6c757d;
+        font-weight: 600;
+        border-bottom: 2px solid #dee2e6;
+        text-transform: uppercase;
+        font-size: 0.85rem;
+    }
+    .tabla-goleadores td {
+        vertical-align: middle;
+        border-bottom: 1px solid #f8f9fa;
+    }
+    .tabla-goleadores tr:hover td {
+        background-color: #f8f9fa; 
+    }
+    
+    /* Estilo para el número de posición */
+    .numero-posicion {
+        font-size: 1.2rem;
+        font-weight: 900;
+        color: #adb5bd;
+    }
+    .top-1 { color: #ffc107; } /* Dorado para el primer lugar */
+    .top-2 { color: #a3a3a3; } /* Plata para el segundo */
+    .top-3 { color: #cd7f32; } /* Bronce para el tercero */
+</style>
+
+<div class="container py-5">
+
+    {{-- ========================================== --}}
+    {{-- ENCABEZADO DE LA TABLA                     --}}
+    {{-- ========================================== --}}
+    <div class="row justify-content-center mb-5">
+        <div class="col-lg-10">
+            <div class="caja-titulo-azul p-4 rounded-4 shadow-sm border-top border-4 border-warning text-center">
+                <h2 class="h1 efecto-3d mb-1">Tienda Oficial de La Liga</h2>
+                <p class="text-white-50 font-light mb-0" style="letter-spacing: 1px;">
+                    <i class="fa-solid fa-futbol me-2"></i>catalogo de objetos de equipos de la liga
+                </p>
+            </div>
+        </div>
+    </div>
 <style>
     .oculto {
         display: none !important;
     }
 </style>
-
-<div class="container my-5" id="seccion-animada">
-    <h2 class="efecto-deslizar text-center font-bold text-primary mb-4">Tienda Oficial de La Liga</h2>
 
     <div class="row">
         <div class="col-md-3 bg-light p-4 rounded shadow-sm">
