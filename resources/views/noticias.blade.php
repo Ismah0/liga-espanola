@@ -48,6 +48,14 @@
     .top-1 { color: #ffc107; } /* Dorado para el primer lugar */
     .top-2 { color: #a3a3a3; } /* Plata para el segundo */
     .top-3 { color: #cd7f32; } /* Bronce para el tercero */
+
+    /* ========================================== */
+    /* NUEVO: ESTILO PARA EMPAREJAR LAS IMÁGENES  */
+    /* ========================================== */
+    .card-img-top {
+        height: 220px; /* Puedes ajustar este número si las quieres más altas o bajas */
+        object-fit: cover;
+    }
 </style>
 
 <div class="container py-5">
@@ -133,4 +141,5 @@
         </div>
     </article>
 </section>
+</div>
 @endsection
