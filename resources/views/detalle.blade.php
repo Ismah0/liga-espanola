@@ -159,7 +159,7 @@
             <div class="row g-4 justify-content-center">
                 <article class="col-md-5">
                     <div class="card border-0 shadow-sm h-100 text-center">
-                        <img src="{{ asset('img/atletico.png') }}" class="card-img-top p-4 mx-auto" style="height: 200px; width: auto; object-fit: contain;" alt="Escudo">
+                        <img src="{{ asset('img/atlmadrid.png') }}" class="card-img-top p-4 mx-auto" style="height: 200px; width: auto; object-fit: contain;" alt="Escudo">
                         <div class="card-body bg-light">
                             <h4 class="h5 font-bold">Escudo</h4>
                             <p class="text-secondary mb-0">El emblema del equipo.</p>
@@ -209,7 +209,7 @@
         </section>
 
     {{-- ========================================== --}}
-    {{-- Repetir formato para 4. VALENCIA CF        --}}
+    {{-- 4.VALENCIA CF        --}}
     {{-- ========================================== --}}
     @elseif($equipoSeleccionado == 'valencia')
         <div class="text-center mb-5 bg-dark text-white p-5 rounded shadow">

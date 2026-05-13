@@ -202,7 +202,7 @@
                                 <tr>
                                     <td class="text-start fs-6 ps-4 font-bold">
                                         <span class="me-3 text-secondary">8</span>
-                                        <img src="{{ asset('img/laspalmas.png') }}" width="28" class="me-2" alt="Las Palmas">
+                                        <img src="{{ asset('img/udlaspalmas.png') }}" width="28" class="me-2" alt="Las Palmas">
                                         UD Las Palmas
                                     </td>
                                     <td>28</td><td>10</td><td>7</td><td>11</td><td>29</td><td>32</td><td>-3</td>
