@@ -27,4 +27,5 @@ WORKDIR /var/www/html
 RUN composer install --no-dev --optimize-autoloader
 
 #Asignar permisos al servidor web para carpetas de almacenamiento y caché
-RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
+RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache /var/www/html/database
+RUN chmod -R 775 /var/www/html/database
