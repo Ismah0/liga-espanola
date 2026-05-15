@@ -105,7 +105,7 @@
                 </article>
                 <article class="col-md-5">
                     <div class="card border-0 shadow-sm h-100 text-center">
-                        <img src="{{ asset('img/estadio-madrid.jpg') }}" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Estadio">
+                        <img src="{{ asset('img-detalles/santiago bernabeu.png') }}" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Estadio">
                         <div class="card-body bg-light">
                             <h4 class="h5 font-bold">Estadio</h4>
                             <p class="text-secondary mb-0">Santiago Bernabéu</p>
@@ -119,25 +119,25 @@
             <h3 class="h3 font-bold text-primary mb-4">Jugadores Clave</h3>
             <div class="row g-4">
                 <article class="col-6 col-md-3">
-                    <img src="{{ asset('img/vinicius.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Vinícius Jr">
+                    <img src="{{ asset('img-detalles/vinicius.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Vinícius Jr">
                     <h4 class="h6 font-bold mb-0">Vinícius Jr</h4>
                     <p class="text-secondary small mb-2">Delantero</p>
                     <p class="font-bold text-dark">Goles: 15</p>
                 </article>
                 <article class="col-6 col-md-3">
-                    <img src="{{ asset('img/bellingham.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Jude Bellingham">
+                    <img src="{{ asset('img-detalles/bellingam.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Jude Bellingham">
                     <h4 class="h6 font-bold mb-0">J. Bellingham</h4>
                     <p class="text-secondary small mb-2">Centrocampista</p>
                     <p class="font-bold text-dark">Asistencias: 8</p>
                 </article>
                 <article class="col-6 col-md-3">
-                    <img src="{{ asset('img/rudiger.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Rüdiger">
+                    <img src="{{ asset('img-detalles/rudiger.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Rüdiger">
                     <h4 class="h6 font-bold mb-0">Rüdiger</h4>
                     <p class="text-secondary small mb-2">Defensor</p>
                     <p class="font-bold text-dark">Intercepciones: 40</p>
                 </article>
                 <article class="col-6 col-md-3">
-                    <img src="{{ asset('img/courtois.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Courtois">
+                    <img src="{{ asset('img-detalles/Courtois.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Courtois">
                     <h4 class="h6 font-bold mb-0">Courtois</h4>
                     <p class="text-secondary small mb-2">Portero</p>
                     <p class="font-bold text-dark">Paradas: 25</p>
@@ -168,7 +168,7 @@
                 </article>
                 <article class="col-md-5">
                     <div class="card border-0 shadow-sm h-100 text-center">
-                        <img src="{{ asset('img/estadio-atleti.jpg') }}" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Estadio">
+                        <img src="{{ asset('img-detalles/metropolitano.png') }}" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Estadio">
                         <div class="card-body bg-light">
                             <h4 class="h5 font-bold">Estadio</h4>
                             <p class="text-secondary mb-0">Cívitas Metropolitano</p>
@@ -182,25 +182,25 @@
             <h3 class="h3 font-bold text-primary mb-4">Jugadores Clave</h3>
             <div class="row g-4">
                 <article class="col-6 col-md-3">
-                    <img src="{{ asset('img/griezmann.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Griezmann">
+                    <img src="{{ asset('img-detalles/griezmann.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Griezmann">
                     <h4 class="h6 font-bold mb-0">Griezmann</h4>
                     <p class="text-secondary small mb-2">Delantero</p>
                     <p class="font-bold text-dark">Goles: 12</p>
                 </article>
                 <article class="col-6 col-md-3">
-                    <img src="{{ asset('img/koke.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Koke">
+                    <img src="{{ asset('img-detalles/koke.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Koke">
                     <h4 class="h6 font-bold mb-0">Koke</h4>
                     <p class="text-secondary small mb-2">Centrocampista</p>
                     <p class="font-bold text-dark">Asistencias: 7</p>
                 </article>
                 <article class="col-6 col-md-3">
-                    <img src="{{ asset('img/gimenez.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Giménez">
+                    <img src="{{ asset('img-detalles/gimenez.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Giménez">
                     <h4 class="h6 font-bold mb-0">Giménez</h4>
                     <p class="text-secondary small mb-2">Defensor</p>
                     <p class="font-bold text-dark">Intercepciones: 35</p>
                 </article>
                 <article class="col-6 col-md-3">
-                    <img src="{{ asset('img/oblak.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Oblak">
+                    <img src="{{ asset('img-detalles/oblak.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Oblak">
                     <h4 class="h6 font-bold mb-0">Oblak</h4>
                     <p class="text-secondary small mb-2">Portero</p>
                     <p class="font-bold text-dark">Paradas: 28</p>
@@ -231,7 +231,7 @@
                 </article>
                 <article class="col-md-5">
                     <div class="card border-0 shadow-sm h-100 text-center">
-                        <img src="{{ asset('img/estadio-valencia.jpg') }}" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Estadio">
+                        <img src="{{ asset('img-detalles/mestalia.png') }}" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Estadio">
                         <div class="card-body bg-light">
                             <h4 class="h5 font-bold">Estadio</h4>
                             <p class="text-secondary mb-0">Mestalla</p>
@@ -245,26 +245,26 @@
             <h3 class="h3 font-bold text-primary mb-4">Jugadores Clave</h3>
             <div class="row g-4">
                 <article class="col-6 col-md-3">
-                    <img src="{{ asset('img/hugo-duro.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Hugo Duro">
+                    <img src="{{ asset('img-detalles/hugo duro.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Hugo Duro">
                     <h4 class="h6 font-bold mb-0">Hugo Duro</h4>
                     <p class="text-secondary small mb-2">Delantero</p>
                     <p class="font-bold text-dark">Goles: 10</p>
                 </article>
                 <article class="col-6 col-md-3">
-                    <img src="{{ asset('img/pepelu.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Pepelu">
+                    <img src="{{ asset('img-detalles/pepelu.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Pepelu">
                     <h4 class="h6 font-bold mb-0">Pepelu</h4>
                     <p class="text-secondary small mb-2">Centrocampista</p>
                     <p class="font-bold text-dark">Asistencias: 5</p>
                 </article>
                 <article class="col-6 col-md-3">
-                    <img src="{{ asset('img/gaya.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Gayà">
+                    <img src="{{ asset('img-detalles/gaya.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Gayà">
                     <h4 class="h6 font-bold mb-0">Gayà</h4>
                     <p class="text-secondary small mb-2">Defensor</p>
                     <p class="font-bold text-dark">Intercepciones: 30</p>
                 </article>
                 <article class="col-6 col-md-3">
-                    <img src="{{ asset('img/mamardashvili.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Mamardashvili">
-                    <h4 class="h6 font-bold mb-0">Mamardashvili</h4>
+                    <img src="{{ asset('img-detalles/stole.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Mamardashvili">
+                    <h4 class="h6 font-bold mb-0">Stole Dimitrievski</h4>
                     <p class="text-secondary small mb-2">Portero</p>
                     <p class="font-bold text-dark">Paradas: 35</p>
                 </article>
@@ -294,7 +294,7 @@
                 </article>
                 <article class="col-md-5">
                     <div class="card border-0 shadow-sm h-100 text-center">
-                        <img src="{{ asset('img/estadio-sevilla.jpg') }}" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Estadio">
+                        <img src="{{ asset('img-detalles/estadio-sevilla.png') }}" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Estadio">
                         <div class="card-body bg-light">
                             <h4 class="h5 font-bold">Estadio</h4>
                             <p class="text-secondary mb-0">Ramón Sánchez-Pizjuán</p>
@@ -308,25 +308,25 @@
             <h3 class="h3 font-bold text-primary mb-4">Jugadores Clave</h3>
             <div class="row g-4">
                 <article class="col-6 col-md-3">
-                    <img src="{{ asset('img/en-nesyri.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Jugador 1">
-                    <h4 class="h6 font-bold mb-0">En-Nesyri</h4>
+                    <img src="{{ asset('img-detalles/alexis sanchez.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Jugador 1">
+                    <h4 class="h6 font-bold mb-0">Alexis Sanchez</h4>
                     <p class="text-secondary small mb-2">Delantero</p>
                     <p class="font-bold text-dark">Goles: 11</p>
                 </article>
                 <article class="col-6 col-md-3">
-                    <img src="{{ asset('img/ocampos.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Jugador 2">
-                    <h4 class="h6 font-bold mb-0">Ocampos</h4>
+                    <img src="{{ asset('img-detalles/lucien.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Jugador 2">
+                    <h4 class="h6 font-bold mb-0">Lucien Agoumé</h4>
                     <p class="text-secondary small mb-2">Centrocampista</p>
                     <p class="font-bold text-dark">Asistencias: 4</p>
                 </article>
                 <article class="col-6 col-md-3">
-                    <img src="{{ asset('img/navas.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Jugador 3">
-                    <h4 class="h6 font-bold mb-0">Jesús Navas</h4>
+                    <img src="{{ asset('img-detalles/tanguy.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Jugador 3">
+                    <h4 class="h6 font-bold mb-0">Tanguy Nianzou</h4>
                     <p class="text-secondary small mb-2">Defensor</p>
                     <p class="font-bold text-dark">Intercepciones: 20</p>
                 </article>
                 <article class="col-6 col-md-3">
-                    <img src="{{ asset('img/nyland.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Jugador 4">
+                    <img src="{{ asset('img-detalles/Nyland.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Jugador 4">
                     <h4 class="h6 font-bold mb-0">Nyland</h4>
                     <p class="text-secondary small mb-2">Portero</p>
                     <p class="font-bold text-dark">Paradas: 22</p>
@@ -357,7 +357,7 @@
                 </article>
                 <article class="col-md-5">
                     <div class="card border-0 shadow-sm h-100 text-center">
-                        <img src="{{ asset('img/estadio-betis.jpg') }}" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Estadio">
+                        <img src="{{ asset('img-detalles/estadio-betis.png') }}" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Estadio">
                         <div class="card-body bg-light">
                             <h4 class="h5 font-bold">Estadio</h4>
                             <p class="text-secondary mb-0">Benito Villamarín</p>
@@ -371,26 +371,26 @@
             <h3 class="h3 font-bold text-primary mb-4">Jugadores Clave</h3>
             <div class="row g-4">
                 <article class="col-6 col-md-3">
-                    <img src="{{ asset('img/willian-jose.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Jugador 1">
-                    <h4 class="h6 font-bold mb-0">Willian José</h4>
+                    <img src="{{ asset('img-detalles/cucho.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Jugador 1">
+                    <h4 class="h6 font-bold mb-0">Cucho Hernández</h4>
                     <p class="text-secondary small mb-2">Delantero</p>
                     <p class="font-bold text-dark">Goles: 9</p>
                 </article>
                 <article class="col-6 col-md-3">
-                    <img src="{{ asset('img/isco.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Jugador 2">
+                    <img src="{{ asset('img-detalles/isco.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Jugador 2">
                     <h4 class="h6 font-bold mb-0">Isco</h4>
                     <p class="text-secondary small mb-2">Centrocampista</p>
                     <p class="font-bold text-dark">Asistencias: 8</p>
                 </article>
                 <article class="col-6 col-md-3">
-                    <img src="{{ asset('img/pezzella.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Jugador 3">
-                    <h4 class="h6 font-bold mb-0">Pezzella</h4>
+                    <img src="{{ asset('img-detalles/marc.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Jugador 3">
+                    <h4 class="h6 font-bold mb-0">marc bartra</h4>
                     <p class="text-secondary small mb-2">Defensor</p>
                     <p class="font-bold text-dark">Intercepciones: 28</p>
                 </article>
                 <article class="col-6 col-md-3">
-                    <img src="{{ asset('img/rui-silva.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Jugador 4">
-                    <h4 class="h6 font-bold mb-0">Rui Silva</h4>
+                    <img src="{{ asset('img-detalles/alvaro.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Jugador 4">
+                    <h4 class="h6 font-bold mb-0">alvaro valle</h4>
                     <p class="text-secondary small mb-2">Portero</p>
                     <p class="font-bold text-dark">Paradas: 18</p>
                 </article>
@@ -509,8 +509,8 @@
                     <p class="font-bold text-dark">Asistencias: 7</p>
                 </article>
                 <article class="col-6 col-md-3">
-                    <img src="{{ asset('img/zubimendi.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Jugador 3">
-                    <h4 class="h6 font-bold mb-0">Zubimendi</h4>
+                    <img src="{{ asset('img/jon martin.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Jugador 3">
+                    <h4 class="h6 font-bold mb-0">Jon martin</h4>
                     <p class="text-secondary small mb-2">Defensor</p>
                     <p class="font-bold text-dark">Intercepciones: 35</p>
                 </article>
@@ -572,14 +572,14 @@
                     <p class="font-bold text-dark">Asistencias: 5</p>
                 </article>
                 <article class="col-6 col-md-3">
-                    <img src="{{ asset('img/coco.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Jugador 3">
-                    <h4 class="h6 font-bold mb-0">Saúl Coco</h4>
+                    <img src="{{ asset('img/Mika Mármol.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Jugador 3">
+                    <h4 class="h6 font-bold mb-0">Mika Mármol</h4>
                     <p class="text-secondary small mb-2">Defensor</p>
                     <p class="font-bold text-dark">Intercepciones: 25</p>
                 </article>
                 <article class="col-6 col-md-3">
-                    <img src="{{ asset('img/valles.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Jugador 4">
-                    <h4 class="h6 font-bold mb-0">Álvaro Valles</h4>
+                    <img src="{{ asset('img/Dinko Horkaš.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Jugador 4">
+                    <h4 class="h6 font-bold mb-0">Dinko Horkaš</h4>
                     <p class="text-secondary small mb-2">Portero</p>
                     <p class="font-bold text-dark">Paradas: 30</p>
                 </article>
@@ -641,8 +641,8 @@
                     <p class="font-bold text-dark">Intercepciones: 31</p>
                 </article>
                 <article class="col-6 col-md-3">
-                    <img src="{{ asset('img/rajkovic.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Jugador 4">
-                    <h4 class="h6 font-bold mb-0">Rajkovic</h4>
+                    <img src="{{ asset('img/leo roman.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Jugador 4">
+                    <h4 class="h6 font-bold mb-0">Leo roman</h4>
                     <p class="text-secondary small mb-2">Portero</p>
                     <p class="font-bold text-dark">Paradas: 22</p>
                 </article>
@@ -686,26 +686,26 @@
             <h3 class="h3 font-bold text-primary mb-4">Jugadores Clave</h3>
             <div class="row g-4">
                 <article class="col-6 col-md-3">
-                    <img src="{{ asset('img/uzuni.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Jugador 1">
-                    <h4 class="h6 font-bold mb-0">Uzuni</h4>
+                    <img src="{{ asset('img/Mohamed Bouldini.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Jugador 1">
+                    <h4 class="h6 font-bold mb-0">Mohamed Bouldini</h4>
                     <p class="text-secondary small mb-2">Delantero</p>
                     <p class="font-bold text-dark">Goles: 9</p>
                 </article>
                 <article class="col-6 col-md-3">
-                    <img src="{{ asset('img/villar.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Jugador 2">
-                    <h4 class="h6 font-bold mb-0">Gonzalo Villar</h4>
+                    <img src="{{ asset('img/Manu Trigueros.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Jugador 2">
+                    <h4 class="h6 font-bold mb-0">Manu Trigueros</h4>
                     <p class="text-secondary small mb-2">Centrocampista</p>
                     <p class="font-bold text-dark">Asistencias: 3</p>
                 </article>
                 <article class="col-6 col-md-3">
-                    <img src="{{ asset('img/miquel.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Jugador 3">
-                    <h4 class="h6 font-bold mb-0">Ignasi Miquel</h4>
+                    <img src="{{ asset('img/Oscar Naasei.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Jugador 3">
+                    <h4 class="h6 font-bold mb-0">Oscar Naasei</h4>
                     <p class="text-secondary small mb-2">Defensor</p>
                     <p class="font-bold text-dark">Intercepciones: 22</p>
                 </article>
                 <article class="col-6 col-md-3">
-                    <img src="{{ asset('img/batalla.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Jugador 4">
-                    <h4 class="h6 font-bold mb-0">Batalla</h4>
+                    <img src="{{ asset('img/Luca Zidane.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Jugador 4">
+                    <h4 class="h6 font-bold mb-0">Luca Zidane</h4>
                     <p class="text-secondary small mb-2">Portero</p>
                     <p class="font-bold text-dark">Paradas: 15</p>
                 </article>
@@ -749,14 +749,14 @@
             <h3 class="h3 font-bold text-primary mb-4">Jugadores Clave</h3>
             <div class="row g-4">
                 <article class="col-6 col-md-3">
-                    <img src="{{ asset('img/boye.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Jugador 1">
-                    <h4 class="h6 font-bold mb-0">Lucas Boyé</h4>
+                    <img src="{{ asset('img/André Silva.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Jugador 1">
+                    <h4 class="h6 font-bold mb-0">André Silva</h4>
                     <p class="text-secondary small mb-2">Delantero</p>
                     <p class="font-bold text-dark">Goles: 7</p>
                 </article>
                 <article class="col-6 col-md-3">
-                    <img src="{{ asset('img/fidel.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Jugador 2">
-                    <h4 class="h6 font-bold mb-0">Fidel</h4>
+                    <img src="{{ asset('img/Marc Aguado.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Jugador 2">
+                    <h4 class="h6 font-bold mb-0">Marc Aguado</h4>
                     <p class="text-secondary small mb-2">Centrocampista</p>
                     <p class="font-bold text-dark">Asistencias: 5</p>
                 </article>
@@ -767,8 +767,8 @@
                     <p class="font-bold text-dark">Intercepciones: 19</p>
                 </article>
                 <article class="col-6 col-md-3">
-                    <img src="{{ asset('img/edgar-badia.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Jugador 4">
-                    <h4 class="h6 font-bold mb-0">Edgar Badia</h4>
+                    <img src="{{ asset('img/iñaki peña.png') }}" class="rounded-circle mb-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Jugador 4">
+                    <h4 class="h6 font-bold mb-0">Iñaki peña</h4>
                     <p class="text-secondary small mb-2">Portero</p>
                     <p class="font-bold text-dark">Paradas: 26</p>
                 </article>

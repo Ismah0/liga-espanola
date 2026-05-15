@@ -92,7 +92,7 @@
                                 <tr>
                                     <td><span class="numero-posicion top-1">1</span></td>
                                     <td class="text-start font-bold ps-4">
-                                        <img src="{{ asset('img/lewandowski.jpg') }}" width="45" height="45" style="object-fit: cover;" class="me-3 rounded-circle shadow-sm border border-2 border-warning" alt="Lewandowski">
+                                        <img src="{{ asset('img-detalles/lewan.png') }}" width="45" height="45" style="object-fit: cover;" class="me-3 rounded-circle shadow-sm border border-2 border-warning" alt="Lewandowski">
                                         Robert Lewandowski
                                     </td>
                                     <td class="text-start text-secondary font-bold">
@@ -106,7 +106,7 @@
                                 <tr>
                                     <td><span class="numero-posicion top-2">2</span></td>
                                     <td class="text-start font-bold ps-4">
-                                        <img src="{{ asset('img/vinicius.jpg') }}" width="45" height="45" style="object-fit: cover;" class="me-3 rounded-circle shadow-sm border border-2 border-secondary" alt="Vinícius">
+                                        <img src="{{ asset('img-detalles/vinicius.png') }}" width="45" height="45" style="object-fit: cover;" class="me-3 rounded-circle shadow-sm border border-2 border-secondary" alt="Vinícius">
                                         Vinícius Júnior
                                     </td>
                                     <td class="text-start text-secondary font-bold">
@@ -120,7 +120,7 @@
                                 <tr>
                                     <td><span class="numero-posicion top-3">3</span></td>
                                     <td class="text-start font-bold ps-4">
-                                        <img src="{{ asset('img/griezmann.jpg') }}" width="45" height="45" style="object-fit: cover;" class="me-3 rounded-circle shadow-sm border border-2" style="border-color: #cd7f32 !important;" alt="Griezmann">
+                                        <img src="{{ asset('img-detalles/griezmann.png') }}" width="45" height="45" style="object-fit: cover;" class="me-3 rounded-circle shadow-sm border border-2" style="border-color: #cd7f32 !important;" alt="Griezmann">
                                         Antoine Griezmann
                                     </td>
                                     <td class="text-start text-secondary font-bold">
@@ -148,7 +148,7 @@
                                 <tr>
                                     <td><span class="numero-posicion">5</span></td>
                                     <td class="text-start font-bold ps-4">
-                                        <img src="{{ asset('img/duro.jpg') }}" width="45" height="45" style="object-fit: cover;" class="me-3 rounded-circle shadow-sm" alt="Duro">
+                                        <img src="{{ asset('img-detalles/hugo duro.png') }}" width="45" height="45" style="object-fit: cover;" class="me-3 rounded-circle shadow-sm" alt="Duro">
                                         Hugo Duro
                                     </td>
                                     <td class="text-start text-secondary font-bold">
