@@ -80,7 +80,7 @@
             <div class="container">
                 <div class="navbar-nav">
                     <a class="nav-link" href="/">Inicio</a>
-                    <a class="nav-link" href="/equipos-test">Equipos</a>
+                    <a class="nav-link" href="/equipos">Equipos</a>
                     <a class="nav-link" href="/posiciones">Posiciones</a>
                     <a class="nav-link" href="/calendario">Calendario</a>
                     <a class="nav-link" href="/resultados">Resultados</a>
