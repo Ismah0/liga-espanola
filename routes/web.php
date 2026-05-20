@@ -2,9 +2,8 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () { return view('inicio'); });
-Route::get('/equipos-test', function () { return view('equipos'); });
+Route::get('/equipos', function () { return view('equipos'); });
 Route::get('/detalle/{equipo}', function ($equipo) {
-    // Le pasamos el nombre del equipo a la vista detalle.blade.php
     return view('detalle', ['equipoSeleccionado' => $equipo]);
 })->name('detalle.equipo');
 Route::get('/posiciones', function () { return view('posiciones'); });

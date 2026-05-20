@@ -33,4 +33,63 @@ document.addEventListener('DOMContentLoaded', function() {
         elementos[i].addEventListener('mouseover', aplicarResalte);
         elementos[i].addEventListener('mouseout', quitarResalte);
     }
+
+    document.addEventListener('DOMContentLoaded', function() {
+    
+    const formBuscador = document.getElementById('form-buscador-global');
+    const inputBuscador = document.getElementById('input-buscador-global');
+
+    if (formBuscador && inputBuscador) {
+        formBuscador.addEventListener('submit', function(evento) {
+            // Evitamos que la página se recargue al dar "Enter" o clic
+            evento.preventDefault(); 
+            
+            // Obtenemos lo que escribió el usuario, en minúsculas y sin espacios extra
+            let busqueda = inputBuscador.value.toLowerCase().trim();
+
+            // Diccionario de rutas: "palabra clave" : "/ruta-de-laravel"
+            const mapaRutas = {
+                'inicio': '/',
+                'home': '/',
+                'equipo': '/equipos',
+                'posicion': '/posiciones',
+                'tabla': '/posiciones',
+                'calendario': '/calendario',
+                'fecha': '/calendario',
+                'resultado': '/resultados',
+                'marcador': '/resultados',
+                'goleador': '/goleadores',
+                'pichichi': '/goleadores',
+                'historia': '/historia',
+                'noticia': '/noticias',
+                'contacto': '/contacto',
+                'mensaje': '/contacto',
+                'faq': '/faq',
+                'pregunta': '/faq',
+                'catalogo': '/catalogo',
+                'tienda': '/catalogo',
+                'comprar': '/catalogo',
+                'producto': '/catalogo'
+            };
+
+            let destino = null;
+
+            // Revisamos si lo que escribió coincide con alguna palabra clave de nuestro mapa
+            for (const [palabraClave, ruta] of Object.entries(mapaRutas)) {
+                if (busqueda.includes(palabraClave)) {
+                    destino = ruta;
+                    break; // Si encuentra una coincidencia, detenemos la búsqueda
+                }
+            }
+
+            // Si encontró un destino, redirigimos. Si no, le avisamos al usuario.
+            if (destino) {
+                window.location.href = destino;
+            } else {
+                alert('No encontramos la sección "' + busqueda + '". Intenta buscar: Historia, Equipos, Catálogo, Posiciones...');
+                inputBuscador.value = ""; // Limpiamos el buscador
+            }
+        });
+    }
+});
 });
