@@ -26,6 +26,28 @@ document.addEventListener('DOMContentLoaded', () => {
     if (chkTodos) {
         chkTodos.addEventListener('change', gestionarVerTodos);
     }
+    let inputBuscador = document.getElementById('buscador-productos');
+    
+    if (inputBuscador) {
+        inputBuscador.addEventListener('keyup', function() {
+            // Convertimos a minúsculas lo que el usuario escribe
+            let textoFiltro = this.value.toLowerCase(); 
+            // Obtenemos todas las tarjetas que tienen la clase 'articulo'
+            let tarjetas = document.getElementsByClassName('articulo');
+
+            for (let i = 0; i < tarjetas.length; i++) {
+                // Obtenemos todo el texto visible dentro de la tarjeta
+                let contenidoTarjeta = tarjetas[i].innerText.toLowerCase();
+
+                // Si el texto de la tarjeta incluye lo que se buscó, la mostramos, si no, la ocultamos
+                if (contenidoTarjeta.includes(textoFiltro)) {
+                    tarjetas[i].style.display = "";
+                } else {
+                    tarjetas[i].style.display = "none";
+                }
+            }
+        });
+    }
 });
 
 // Función para el botón "Ver Todos"

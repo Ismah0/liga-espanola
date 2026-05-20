@@ -51,6 +51,11 @@
 </style>
 
 <div class="container py-5">
+    <div class="row mb-4">
+    <div class="col-md-12">
+        <input type="text" id="buscador-productos" class="form-control form-control-lg border-primary shadow-sm" placeholder="🔍 Buscar por equipo, talla o tipo (ej. Madrid, Gorra, Chica)...">
+    </div>
+</div>
 
     {{-- ========================================== --}}
     {{-- ENCABEZADO DE LA TABLA                     --}}
