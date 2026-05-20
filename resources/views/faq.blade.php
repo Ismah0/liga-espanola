@@ -68,72 +68,81 @@
     }
 </style>
 
-<div class="container py-5">
-    
-    {{-- ========================================== --}}
-    {{-- ENCABEZADO ESTILO PREMIUM                  --}}
-    {{-- ========================================== --}}
-    <div class="row justify-content-center mb-5">
-        <div class="col-lg-10">
-            <div class="caja-titulo-azul p-4 shadow-sm text-center">
-                <h2 class="h1 efecto-3d mb-1">Preguntas Frecuentes</h2>
-                <p class="text-white-50 mb-0" style="letter-spacing: 1px;">
-                    Todo lo que necesitas saber sobre el torneo
-                </p>
-            </div>
-        </div>
-    </div>
-
-    {{-- ========================================== --}}
-    {{-- CONTENIDO DE PREGUNTAS                     --}}
-    {{-- ========================================== --}}
+<div class="container my-5">
     <div class="row justify-content-center">
-        <div class="col-lg-8">
+        <div class="col-md-8">
             
-            {{-- Pregunta 1 --}}
-            <div class="faq-item">
-                <button id="p1" class="faq-btn">
-                    <span>¿Cuándo inicia la próxima temporada de La Liga?</span>
-                    <span class="text-secondary">▼</span>
-                </button>
-                <div id="r1" class="faq-content hidden">
-                    La próxima temporada de La Liga Española está programada para iniciar en la segunda semana de agosto del presente año.
+            <div class="accordion shadow-sm" id="accordionFAQ">
+                
+                <div class="accordion-item mb-3 border-0 rounded">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button bg-light text-dark font-bold collapsed" type="button" data-target="#collapseOne">
+                            ¿Cuándo inicia la próxima temporada de La Liga?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" style="display: none;">
+                        <div class="accordion-body text-muted">
+                            La próxima temporada de La Liga Española tradicionalmente comienza a mediados del mes de agosto. Los calendarios oficiales se publican unas semanas antes del inicio.
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            {{-- Pregunta 2 --}}
-            <div class="faq-item">
-                <button id="p2" class="faq-btn">
-                    <span>¿Cómo puedo comprar boletos para un partido?</span>
-                    <span class="text-secondary">▼</span>
-                </button>
-                <div id="r2" class="faq-content hidden">
-                    Los boletos se pueden adquirir a través de los sitios web oficiales de cada club o en nuestra sección de 'Boletos' una vez que el calendario oficial sea publicado.
+                <div class="accordion-item mb-3 border-0 rounded">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button bg-light text-dark font-bold collapsed" type="button" data-target="#collapseTwo">
+                            ¿Cómo puedo comprar boletos para un partido?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" style="display: none;">
+                        <div class="accordion-body text-muted">
+                            Puedes adquirir tus entradas directamente a través de las páginas web oficiales de cada club local o mediante los distribuidores autorizados de La Liga.
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            {{-- Pregunta 3 --}}
-            <div class="faq-item">
-                <button id="p3" class="faq-btn">
-                    <span>¿Qué equipos ascendieron este año?</span>
-                    <span class="text-secondary">▼</span>
-                </button>
-                <div id="r3" class="faq-content hidden">
-                    Este año damos la bienvenida a La Liga a los recién ascendidos: Valladolid, Leganés y Espanyol, quienes lograron su pase desde Segunda División.
+                <div class="accordion-item mb-3 border-0 rounded">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button bg-light text-dark font-bold collapsed" type="button" data-target="#collapseThree">
+                            ¿Qué equipos ascendieron este año?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" style="display: none;">
+                        <div class="accordion-body text-muted">
+                            Los equipos que lograron el ascenso a la Primera División para esta nueva temporada son anunciados oficialmente al concluir los playoffs de la Segunda División (LaLiga Hypermotion).
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            {{-- Botón de Contacto --}}
-            <div class="text-center mt-5">
-                <p class="text-secondary mb-2">¿Aún tienes dudas? Contáctanos directamente.</p>
-                <button class="btn btn-dark px-4 py-2 fw-bold rounded-pill shadow-sm">
-                    Enviar un mensaje
-                </button>
             </div>
-
         </div>
     </div>
 </div>
 
-<script src="{{ asset('js/faq.js') }}"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const botones = document.querySelectorAll('.accordion-button');
+        
+        botones.forEach(boton => {
+            boton.addEventListener('click', function() {
+                const targetId = this.getAttribute('data-target');
+                const contenedor = document.querySelector(targetId);
+                
+                if (contenedor.style.display === 'block') {
+                    contenedor.style.display = 'none';
+                    this.classList.add('collapsed');
+                } else {
+                    document.querySelectorAll('.accordion-collapse').forEach(c => {
+                        c.style.display = 'none';
+                    });
+                    document.querySelectorAll('.accordion-button').forEach(b => {
+                        b.classList.add('collapsed');
+                    });
+                    
+                    contenedor.style.display = 'block';
+                    this.classList.remove('collapsed');
+                }
+            });
+        });
+    });
+</script>
 @endsection
