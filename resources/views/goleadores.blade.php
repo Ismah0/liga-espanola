@@ -3,9 +3,6 @@
 
 @section('contenido')
 
-{{-- ========================================== --}}
-{{-- ESTILOS PERSONALIZADOS                     --}}
-{{-- ========================================== --}}
 <style>
     /* Efecto 3D para el título (Igual que posiciones) */
     .efecto-3d {
@@ -54,10 +51,6 @@
 </style>
 
 <div class="container py-5">
-
-    {{-- ========================================== --}}
-    {{-- ENCABEZADO DE LA TABLA                     --}}
-    {{-- ========================================== --}}
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
             <div class="caja-titulo-azul p-4 rounded-4 shadow-sm border-top border-4 border-warning text-center">
@@ -69,9 +62,6 @@
         </div>
     </div>
 
-    {{-- ========================================== --}}
-    {{-- TABLA DE GOLEADORES                        --}}
-    {{-- ========================================== --}}
     <section class="row justify-content-center">
         <div class="col-lg-10">
             <div class="card shadow border-0 rounded-4 overflow-hidden">
@@ -134,7 +124,7 @@
                                 <tr>
                                     <td><span class="numero-posicion">4</span></td>
                                     <td class="text-start font-bold ps-4">
-                                        <img src="{{ asset('img/williams.jpg') }}" width="45" height="45" style="object-fit: cover;" class="me-3 rounded-circle shadow-sm" alt="Williams">
+                                        <img src="{{ asset('img-detalles/inaki williams.png') }}" width="45" height="45" style="object-fit: cover;" class="me-3 rounded-circle shadow-sm" alt="Williams">
                                         Iñaki Williams
                                     </td>
                                     <td class="text-start text-secondary font-bold">
