@@ -34,7 +34,11 @@
     <main class="container mt-4 mb-5">
         @yield('contenido')
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
+    <script src="/js/efectos-globales.js"></script>
+    <script src="/js/animaciones.js"></script>
+    <script src="/js/catalogo.js"></script>
 @include('components.footer')
 </body>
 </html>
