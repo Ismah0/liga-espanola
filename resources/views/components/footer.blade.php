@@ -1,5 +1,4 @@
-    {{-- AQUI ESTA LA CORRECCIÓN: Se abrieron bien las etiquetas del footer --}}
-    <footer class="bg-dark text-white p-3 mt-4">
+   <footer class="bg-dark text-white p-3 mt-4">
         <div class="container d-flex justify-content-between align-items-center">
             <p class="mb-0 font-light">&copy; 2026 La Liga Española</p>
             <div>
